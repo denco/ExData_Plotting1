@@ -34,11 +34,11 @@ data = suppressWarnings(
 
 ### Transform date and subsetting data
 data$Date = as.Date(data$Date , "%d/%m/%Y")
-data$Global_active_power = as.numeric(data$Global_active_power)
 data = subset(data, Date %in% c(as.Date("2007-02-01"), as.Date("2007-02-02")))
 data$Timestamp = as.POSIXct(sprintf("%s %s", data$Date, data$Time), "%Y-%m-%d %H:%M:%S")
+data$Global_active_power = as.numeric(data$Global_active_power)
 
-### create histogramm
+### create plot
 png(file="plot2.png", width = 504, height = 504, bg = "transparent")
 with(
     data,
