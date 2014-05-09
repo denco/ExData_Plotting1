@@ -39,7 +39,7 @@ data$Timestamp = as.POSIXct(sprintf("%s %s", data$Date, data$Time), "%Y-%m-%d %H
 data$Global_active_power = as.numeric(data$Global_active_power)
 
 ### create plot
-png(file="plot2.png", width = 504, height = 504, bg = "transparent")
+png(file="plot2.png", width = 480, height = 480, bg = "transparent")
 with(
     data,
     plot(

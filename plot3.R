@@ -41,7 +41,7 @@ data$Sub_metering_2 = as.double(data$Sub_metering_2)
 data$Sub_metering_3 = as.double(data$Sub_metering_3)
 
 ### create plot
-png(file="plot3.png", width = 504, height = 504, bg = "transparent")
+png(file="plot3.png", width = 480, height = 480, bg = "transparent")
 plot(
   data$Timestamp,
   data$Sub_metering_1,
