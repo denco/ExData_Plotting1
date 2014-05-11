@@ -1,3 +1,11 @@
+## Warning!!!
+
+***Plotted PNG-Files*** have a transparent Background, as ***original PNG-Files*** too.
+(You can check it under [figure](./figure) folder.)
+
+**If you see the Plots on GitHub. your will see a gray checkerboard background!**
+
+
 ## Introduction
 
 This assignment uses data from
