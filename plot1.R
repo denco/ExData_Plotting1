@@ -38,7 +38,7 @@ data$Global_active_power = as.numeric(data$Global_active_power)
 data = subset(data, Date %in% c(as.Date("2007-02-01"), as.Date("2007-02-02")))
 
 ### create histogramm
-png(file="plot1.png", width = 504, height = 504, bg = "transparent")
+png(file="plot1.png", width = 480, height = 480, bg = "transparent")
 with(
     data,
     hist(
